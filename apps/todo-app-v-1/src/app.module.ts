@@ -1,6 +1,10 @@
 import { Module } from "@nestjs/common";
 import { UserModule } from "./user/user.module";
 import { ToDoModule } from "./toDo/toDo.module";
+import { PageModule } from "./page/page.module";
+import { ComponentModule } from "./component/component.module";
+import { ProjectModule } from "./project/project.module";
+import { ElementModule } from "./element/element.module";
 import { HealthModule } from "./health/health.module";
 import { PrismaModule } from "./prisma/prisma.module";
 import { SecretsManagerModule } from "./providers/secrets/secretsManager.module";
@@ -20,6 +24,10 @@ import { AuthModule } from "./auth/auth.module";
     AuthModule,
     UserModule,
     ToDoModule,
+    PageModule,
+    ComponentModule,
+    ProjectModule,
+    ElementModule,
     HealthModule,
     PrismaModule,
     SecretsManagerModule,
